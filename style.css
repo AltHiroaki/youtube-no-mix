@@ -1,0 +1,11 @@
+/* * ミックスリスト（start_radioパラメータを持つリンクを含む要素）を非表示
+ * ytd-rich-item-renderer: トップページの動画カード
+ * ytd-compact-radio-renderer: 関連動画のミックスリスト専用カード
+ * ytd-radio-renderer: 検索結果のミックスリスト
+ */
+ytd-rich-item-renderer:has(a[href*="start_radio=1"]),
+ytd-compact-radio-renderer,
+ytd-radio-renderer,
+yt-lockup-view-model:has(a[href*="start_radio=1"]) {
+    display: none !important;
+}
